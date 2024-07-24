@@ -22,7 +22,7 @@ const sizeLabel = document.getElementById('size-value');
 status.textContent = 'Loading model...';
 
 // Load model and processor
-const model_id = 'Xenova/gelan-c_all';
+const model_id = 'kurnie/yolo-realtime';
 const model = await AutoModel.from_pretrained(model_id);
 const processor = await AutoProcessor.from_pretrained(model_id);
 
